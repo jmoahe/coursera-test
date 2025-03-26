@@ -15,6 +15,10 @@ h1 {
 }
 
 div#container {
+  background-color: #00FFFF; 
+}
+  
+p {
   border: 1px solid black;
   background-color: #A52A2A;
   width: 90%;
@@ -23,25 +27,16 @@ div#container {
   margin-left: auto;
   font-family: Helvetica;
   color: white;
+}
 
-}
-  
-/*  
-container {
-  position: relative;
-  text-align: center;
-  color: black;
-}
-  */
-
-.top-right {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  position: relative;
-  top: 8px;
-  right: 16px;
-}
-   
+#p1 { background-color: #A52A2A;  
+      position: absolute;
+    /*  top: 5px; */
+   /*    left: 65px; */
+      width: 100px;
+      height: 50px;
+}  
+    
 
 /* Simple Responsive Framework. */
 .row {
@@ -186,8 +181,10 @@ container {
 <body>
 <h1>Our Menu</h1>
 
-<div id="container" class="col-lg-4 col-md-6 col-sm-12">
-  <div class="top-right">Top Right</div>
+<div id="container" class="row">
+  <div  class="col-lg-4 col-md-6 col-sm-12"><p>Chicken</p><p id="p1">Chicken</p></div>
+  <div  class="col-lg-4 col-md-6 col-sm-12"><p>Beef</p><p id="p1">Chicken</p></div>
+  <div class="col-lg-4 col-md-6 col-sm-12"><p>Sushi</p><p id="p1">Chicken</p></div>
 </div>
 
 </body>
